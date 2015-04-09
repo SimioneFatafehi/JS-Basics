@@ -6,7 +6,14 @@ var name = 'Tyler';
 //If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 
   //Code Here
-
+var isTyler = function(){
+	if (name === 'Tyler'){
+		return true;
+	}
+	else{
+		return false;
+	}
+}
 
 //Next problem
 
@@ -16,6 +23,10 @@ var name = 'Tyler';
 
 
   //Code Here
+var getName = function(){
+	return prompt("what is your name?");
+};
+var myName = getName();
 
 
 //Next Problem
@@ -26,6 +37,12 @@ var name = 'Tyler';
 //then alerts "Welcome, " plus whatever the users name is.
 
   //Code Here
+  var welcome = function(){
+  	alert("Welcome");
+  	return getName();
+ 
+  	
+  };
 
 
 //Next problem
@@ -36,6 +53,8 @@ var name = 'Tyler';
 //What is the difference between arguments and parameters?
 
   //Answer Here
+arguments are use to invoke a function
+parameters are use in a function
 
 
 //Next problem
@@ -46,6 +65,7 @@ var name = 'Tyler';
 
 
   //Answer Here
+  developer tools or google?
 
 
 
@@ -56,13 +76,15 @@ var name = 'Tyler';
 //Create a function called myName that returns your name
 
   //Code Here
-
+var myName = function(){
+	console.log("Simi");
+};
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
-
+var newMyName = myName;
 //Now alert the result of invoking newMyName
-
+alert(newMyName)
 
 
 //Next problem
@@ -72,9 +94,14 @@ var name = 'Tyler';
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
   //Code Here
-
+var outerFn = function(){
+	return function(){
+		return "simi";
+	}
+};
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
-
+var innerFn = outerFn;
 //Now invoke innerFn.
+innerFn()
